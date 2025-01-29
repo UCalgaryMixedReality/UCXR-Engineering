@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -5,343 +6,173 @@
 body, html {
   margin: 0;
   height: 100%;
-  
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text for contrast */
+  font-family: "Syne", sans-serif;
+  overflow-x: hidden;
 }
 
+/* Slideshow Container */
 .slideshow-container {
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  max-width: 100%;
-  background: #b8b5b7;
+  overflow: hidden;
+  background-color: #000000; /* Black background for slideshow */
 }
-
 
 .mySlides img {
-  width: 100vw;  /* Take the full width of the viewport */
-  height: auto;  /* Maintain aspect ratio */
-  object-fit: contain; /* Ensures the image is fully visible */
-  object-position: center; /* Keeps the image centered */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images cover the entire container */
 }
 
-/* Next & previous buttons */
+/* Navigation Buttons for Slideshow */
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
+  font-size: 24px;
+  transition: 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   border-radius: 50%;
   user-select: none;
   transform: translateY(-50%);
   z-index: 10;
 }
 
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Light hover effect */
+  color: #000;
+}
+
 .prev {
-  left: 10px;
+  left: 20px;
 }
 
 .next {
-  right: 10px;
+  right: 20px;
 }
 
-/* Hover effect for prev/next buttons */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+/* Dots for Slideshow */
+.dot-container {
+  text-align: center;
   position: absolute;
-  top: 0;
+  bottom: 20px;
+  width: 100%;
+  z-index: 10;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #ff6b6b; /* Accent color for active dot */
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration:5s;
+/* Content Containers */
+.HOMEContainer {
+  padding: 40px;
+  background-color: #121212; /* Dark background */
 }
 
-@keyframes fade {
-  from { opacity: .4 }
-  to { opacity: 1 }
-}
-
-/* Text for homepege ARmed description */
-.SmallerContainer{
-  color:black;
+.SmallerContainer, .secondContainer {
+  background-color: #1f1f1f; /* Dark gray for boxes */
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
   text-align: center;
-  background-color:#ebede6;
-  padding: 60px;
-  height: 400px;
-  font-family: "Syne", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 23px;
-  border-radius: 20px;
-  border: 20px;
-  margin-bottom: 300px
-
 }
 
-.secondContainer{
-  text-align: center;
-  background-color:#ebede6;
-  padding: 60px;
-  height: 630px;
-  font-family: "Syne", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  border-radius: 20px;
+.SmallerContainer {
+  height: auto; /* Adjust height automatically */
+}
+
+.secondContainer {
+  height: auto; /* Adjust height automatically */
   position: relative;
+}
+
+/* Typography */
+.libre-baskerville-bold {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 27px;
+  font-size: 20px;
+  color: #cccccc; /* Lighter text for readability */
 }
 
-.libre-baskerville-bold {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 40px;
+/* Buttons */
+.join-button {
+  background-color: #ff6b6b; /* Accent color */
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
 }
 
-.libre-baskerville-regular-italic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 70px;
-  
+.join-button:hover {
+  background-color: #ff4c4c; /* Darker on hover */
 }
 
-.HOMEContainer{
-  /* Ensures the image behaves like a block element */
-  justify-content: flex-end;
-  padding: 40px;
-  background: linear-gradient(to top, #ffaef3, #fff4b1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-  height: 1800px;
-}
-
-
-.ARimage {
-  padding: 7px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-}
-
+/* Images */
 .image-centre {
-  width: 300px; /* Adjusts the image size (width) */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 10px; /* Rounds the corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
-  object-fit: cover; /* Ensures the image scales nicely if it's cropped */
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
 }
-
 
 .image-right {
-  display: block;
-  float: right;       /* Align image to the right */
-  width: 563px;       /* Increase size */
-  height: auto;       /* Maintain aspect ratio */
-  margin-left: 20px;
-  border-radius: 10px; 
-  margin-bottom: 20px; 
-  
-  
-}
-
-.shift-left {
-  display: block;          /* Ensures the text behaves as a block element */
-  text-align: left;        /* Aligns the text to the left */
-
-  width: 100%;             /* Makes the block span the full width */
-  /* Optional: Adds a background color for better visibility */
-  border-radius: 5px;      /* Optional: Rounds the block corners */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
-  width: 500px;
-}
-
-.join-button{
-  background: linear-gradient( #ff3b,rgb(225, 109, 128));
-  padding: 15px;
-  font-size: 23px;
+  width: 400px;
+  height: auto;
   border-radius: 10px;
-  margin: 10px;
-  
+  margin-top: 20px;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 2000px) {
-  .slideshow-container {
-    height: 800px; /* Adjusted to fit image height */
-  }
-  .prev, .next {
-    top: 65%;
-  }
-  .text {
-    font-size: 300%; /* Much larger for desktop screens */
-  }
+/* Footer */
+footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .slideshow-container {
-    height: 600px; /* Adjusted for tablet screens */
-  }
-  .prev, .next {
-    top: 45%;
-  }
-  .text {
-    font-size: 200%; /* Larger for tablets */
-  }
+footer a {
+  color: #ff6b6b;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .slideshow-container {
-    height: 400px; /* Smaller height for small tablets and phones */
-  }
-  .prev, .next {
-    top: 40%;
-  }
-  .text {
-    font-size: 150%; /* Larger for small screens */
-  }
+footer a:hover {
+  color: #ff4c4c;
 }
 
-@media (max-width: 480px) {
-  .slideshow-container {
-    height: 300px; /* Reduced height for portrait phones */
-  }
-  .prev, .next {
-    top: 35%;
-  }
-  .text {
-    font-size: 160%; /* Max size for smallest screens */
-  }
-}
-
-/* Device-Specific Queries */
-@media (max-width: 2000px) {
-  .slideshow-container {
-    height: 800px; /* Adjusted for desktop screens */
-  }
-  .prev, .next {
-    top: 65%;
-  }
-  .text {
-    top: 90%;
-    font-size: 260%; /* Larger text for large desktop screens */
-  }
-}
-
-@media (max-width: 1280px) {
-  .slideshow-container {
-    height: 700px; /* Adjusted for smaller desktop screens */
-  }
-  .prev, .next {
-    top: 60%;
-  }
-  .text {
-    font-size: 200%; /* Large text for smaller desktops */
-  }
-}
-
-@media (max-width: 1024px) {
-  .slideshow-container {
-    height: 600px; /* Adjusted for tablet screens */
-  }
-  .prev, .next {
-    top: 55%;
-  }
-  .text {
-    font-size: 180%; /* Slightly smaller for tablets */
-  }
-}
-
-@media (max-width: 768px) {
-  .slideshow-container {
-    height: 500px; /* Adjusted for small tablets and large phones */
-  }
-  .prev, .next {
-    top: 50%;
-  }
-  .text {
-    font-size: 150%; /* Maintain readability for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .slideshow-container {
-    height: 350px; /* Reduced height for portrait phones */
-  }
-  .prev, .next {
-    top: 45%;
-  }
-  .text {
-    font-size: 120%; /* Optimal size for smaller phones */
-  }
-}
-
-/* Device-Specific Queries for Finer Adjustments */
-@media screen and (max-width: 360px) { /* Smallest devices (e.g., Galaxy A51) */
-  .slideshow-container {
-    height: 280px;
-  }
-  .text {
-    font-size: 140%; /* Ensure readability on small screens */
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) { /* iPads in landscape mode */
-  .text {
-    font-size: 200%; /* Slightly larger for tablets in landscape */
-  }
-}
-
-@media screen and (max-width: 390px) { /* iPhone 12 Pro */
-  .text {
-    font-size: 75px; /* Larger for small devices with higher resolutions */
-  }
-}
-
-@media screen and (max-width: 430px) { /* iPhone 14 Pro Max */
-  .text {
-    font-size: 180%; /* Keep slightly larger for larger phones */
-  }
+footer .bi {
+  font-size: 24px;
+  margin: 0 10px;
 }

@@ -15,14 +15,27 @@
 
   <body>
     <!-- This is for the nav bar -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container justify-content-center">
+        <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img src= "images/ARmed_logo.jpg" alt="logo picture" width="50">
+          <img src="images/ARmed_logo.jpg" alt="ARmed Logo" width="50">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+        <!-- Navbar Toggler for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navbar Links -->
         <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
           <ul class="navbar-nav text-center">
             <li class="nav-item">
@@ -38,7 +51,7 @@
               <a class="nav-link" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Our Sponsors</a>
+              <a class="nav-link active" aria-current="page" href="">Sponsors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contactUs.html">Contact Us</a>

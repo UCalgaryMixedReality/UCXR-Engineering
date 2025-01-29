@@ -1,4 +1,48 @@
-/* The following is for the na-bar*/
+/* Navbar Styling */
+nav.navbar {
+  background-color: #1f1f1f; /* Dark background to match the theme */
+  border-radius: 0; /* Remove border radius to span the full width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%; /* Ensure it spans the entire width of the page */
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove unnecessary padding */
+}
+
+/* Navbar container styling */
+nav.navbar .container {
+  max-width: 100%; /* Make sure the inner container spans the full width */
+  padding-left: 1rem; /* Optional: Add some padding to the sides */
+  padding-right: 1rem; /* Optional: Add some padding to the sides */
+}
+
+/* Navbar Links */
+nav.navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff; /* Light text color for dark theme */
+  font-size: 1rem; /* Adjust text size */
+  font-weight: 500; /* Slightly bold for readability */
+  padding: 8px 15px; /* Space around links */
+  border-radius: 8px; /* Rounds link edges */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Navbar Link Hover Effect */
+nav.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff6b6b; /* Accent color on hover */
+}
+
+/* Navbar Brand Styling */
+.navbar-brand img {
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular logo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+/* Underline Animation for Nav Links */
 .nav-link {
   position: relative;
 }
@@ -19,41 +63,3 @@
   opacity: 1;
 }
 
-/* Navbar Styling */
-nav.navbar {
-  background-color: #ffffff; /* White background for a clean look */
-  border-radius: 0; /* Remove border radius to span the full width */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  width: 100%; /* Ensure it spans the entire width of the page */
-  margin: 0; /* Remove default margins */
-  padding: flex; /* Remove unnecessary padding */
-}
-
-/* Navbar container styling */
-nav.navbar .container {
-  max-width: 100%; /* Make sure the inner container spans the full width */
-  padding-left: 1rem; /* Optional: Add some padding to the sides */
-  padding-right: 1rem; /* Optional: Add some padding to the sides */
-}
-
-/* Navbar Links */
-nav.navbar .navbar-nav .nav-item .nav-link {
-  color: #555; /* Neutral text color */
-  font-size: 1rem; /* Adjust text size */
-  font-weight: 500; /* Slightly bold for readability */
-  padding: 8px 15px; /* Space around links */
-  border-radius: 8px; /* Rounds link edges */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
-  text-transform: uppercase; /* Capitalize link text */
-}
-
-/* Navbar Brand Styling */
-nav.navbar .navbar-brand img {
-  border-radius: 50%; /* Circular logo */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the logo */
-  transition: transform 0.3s ease; /* Smooth animation */
-}
-
-nav.navbar .navbar-brand img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-}
