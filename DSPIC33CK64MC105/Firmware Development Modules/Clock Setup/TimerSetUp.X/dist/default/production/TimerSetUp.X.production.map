@@ -66,9 +66,9 @@ Default Scalar Model: Small
 section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x12a           0x1bf  (447)
-.text                        0x32a                0x62            0x93  (147)
+.text                        0x32a                0x5e            0x8d  (141)
 
-                 Total "program" memory used (bytes):          0x252  (594) <1%
+                 Total "program" memory used (bytes):          0x24c  (588) <1%
 
 
 "data" Memory  [Origin = 0x1000, Length = 0x2000]
@@ -248,18 +248,18 @@ __FALTREG
 .comment
  *(.comment)
 
-.debug_info       0x000000        0xc6e
+.debug_info       0x000000        0xcd5
  *(.debug_info)
- .debug_info      0x000000        0xc6e build/default/production/main.o
+ .debug_info      0x000000        0xcd5 build/default/production/main.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000         0xdc
  *(.debug_abbrev)
  .debug_abbrev    0x000000         0xdc build/default/production/main.o
 
-.debug_line       0x000000        0x132
+.debug_line       0x000000        0x130
  *(.debug_line)
- .debug_line      0x000000        0x132 build/default/production/main.o
+ .debug_line      0x000000        0x130 build/default/production/main.o
 
 .debug_frame      0x000000         0x86
  *(.debug_frame)
@@ -2476,8 +2476,8 @@ __c30_signature
  .ivt._T1Interrupt
                   0x000016          0x2 build/default/production/main.o
 
-.text             0x00032a         0x62
- .text            0x00032a         0x62 build/default/production/main.o
+.text             0x00032a         0x5e
+ .text            0x00032a         0x5e build/default/production/main.o
                   0x00032a                  _clk_setup
                   0x00035a                  _timer_setup
                   0x000378                  _main

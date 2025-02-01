@@ -70,9 +70,9 @@ section                    address   length (PC units)   length (bytes) (dec)
 -------                    -------   -----------------   --------------------
 .text                        0x200               0x100           0x180  (384)
 .init.delay32                0x300                0x1c            0x2a  (42)
-.text                        0x31c                0x16            0x21  (33)
+.text                        0x31c                0x18            0x24  (36)
 
-                 Total "program" memory used (bytes):          0x1cb  (459) <1%
+                 Total "program" memory used (bytes):          0x1ce  (462) <1%
 
 
 "data" Memory  [Origin = 0x1000, Length = 0x4000]
@@ -225,9 +225,9 @@ __FUID3
 .comment
  *(.comment)
 
-.debug_info       0x000000        0x320
+.debug_info       0x000000        0x4ef
  *(.debug_info)
- .debug_info      0x000000        0x320 build/default/production/LED.o
+ .debug_info      0x000000        0x4ef build/default/production/LED.o
  *(.gnu.linkonce.wi.*)
 
 .debug_abbrev     0x000000         0xa1
@@ -1390,7 +1390,7 @@ __c30_signature
  .init.delay32    0x000300         0x1c c:/program files/microchip/xc16/v1.70/bin/bin/../../lib\liblega-pic30-elf.a(delay32ep.Leo)
                   0x000300                  ___delay32
 
-.text             0x00031c         0x16
- .text            0x00031c         0x16 build/default/production/LED.o
+.text             0x00031c         0x18
+ .text            0x00031c         0x18 build/default/production/LED.o
                   0x00031c                  _delay_half_second
                   0x000328                  _main
