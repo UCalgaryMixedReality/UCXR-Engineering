@@ -1,6 +1,6 @@
-# ARmed
+# UCalgary Mixed Reality (UCXR)
 
-This is the augmented reality for medicine's repository. Here, all of our code for every sensor, GPU API, machine learning algorithm, etc. will be stored for version control.
+This is the Universty of Calgary's Mixed Reality design team repository. Here, all of our code for every sensor, GPU API, machine learning algorithm, etc. will be stored for version control.
 
 ## Branches
 
@@ -8,8 +8,8 @@ We will create a branch for every single project. This means that a new branch w
 
 Also add the .gitignore file located in this branch to every new branch you create. This will prevent vscode/vs settings from being added to every single commit.
 
-
 ## Standards
+
 We will have a couple of coding standards to help keep our code readable and scalable.
 
 - Use Camel Case
@@ -49,8 +49,6 @@ class School{
 
 ```
 
-
-
 ## Contributing
 
 Before you merge your branch with any other branches, always get your code reviewed by a peer and a contributor of the branch you are trying to merge to. Get them to comment on your pull request, and then proceed to merge.
@@ -58,14 +56,14 @@ Before you merge your branch with any other branches, always get your code revie
 Please make sure to test all of your code before merging.
 
 ## For more info:
+
 Website:
-[ARmed Website](https://ar-med.ca/)
+[UCXR Website](https://uc-mixedreality.ca/)
 
 Linkedin:
-[ARmed Linkedin](https://www.linkedin.com/company/armeduofc/)
+[UCXR Linkedin](https://www.linkedin.com/company/ucxr/)
 
 Instagram:
-[ARmed Instagram](https://www.instagram.com/armeduofc/)
+[UCXR Instagram](https://www.instagram.com/uofc_xr/)
 
 Operated by the University of Calgary and the Schulich School of Engineering
-
