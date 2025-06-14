@@ -10,14 +10,14 @@ params.serial_port = "COM3"  # Change this to match your actual COM port
 
 # Start session
 BoardShim.enable_dev_board_logger()
-board = BoardShim(board_id, params)
+board = BoardShim(57, params)
 board.prepare_session()
 board.start_stream()
 
 # Get channel and sampling info
-eeg_channels = BoardShim.get_eeg_channels(board_id)
-sampling_rate = BoardShim.get_sampling_rate(board_id)
-window_size = 2  # seconds
+eeg_channels = BoardShim.get_eeg_channels(57)
+sampling_rate = BoardShim.get_sampling_rate(57)
+window_size = 30  # seconds
 num_samples = window_size * sampling_rate
 
 # -------- FUNCTION TO COMPUTE ALPHA/BETA RATIO --------
