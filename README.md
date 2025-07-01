@@ -1,6 +1,6 @@
-# ARmed
+# UCalary Mixed Reality (UCXR)
 
-This is the augmented reality for medicine's repository. Here, all of our code for every sensor, GPU API, machine learning algorithm, etc. will be stored for version control.
+This is UCXR's repository. Here, all of our code for every sensor, GPU API, machine learning algorithm, etc. will be stored for version control.
 
 ## Branches
 
