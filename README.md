@@ -59,13 +59,13 @@ Please make sure to test all of your code before merging.
 
 ## For more info:
 Website:
-[ARmed Website](https://ar-med.ca/)
+[UCXR Website](uc-mixedreality.ca)
 
 Linkedin:
-[ARmed Linkedin](https://www.linkedin.com/company/armeduofc/)
+[UCXR Linkedin](https://www.linkedin.com/company/ucxr)
 
 Instagram:
-[ARmed Instagram](https://www.instagram.com/armeduofc/)
+[UCXR Instagram](https://www.instagram.com/uofc_xr/)
 
 Operated by the University of Calgary and the Schulich School of Engineering
 
